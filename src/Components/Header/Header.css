@@ -1,10 +1,11 @@
 .header {
     height: 80px;
     background-color: #1C2B35;
-   display: flex;
-   align-items: center;    
-   justify-content: space-between; 
-}
+    display: flex;
+    align-items: center;    
+    justify-content: space-between; 
+    font-size: 17px;
+} 
 .header img{
     margin-left: 20px;
 }
