@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import Product from '../Product/Product';
 import './Shop.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrashCan,faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const Shop = () => {
     const [products, setProducts]= useState([]);
@@ -36,10 +38,10 @@ setCart(newCart);
             <p>Total Shipping Charge:$ </p>
             <p>Tax:$ </p>
             <h3>Grand Total: $</h3>
-            <button className='clear-cart-btn'>Clear Cart </button> 
+            <button className='clear-cart-btn'>Clear Cart  <FontAwesomeIcon icon={faTrashCan} /> </button> 
             <br />
-            <button className='review-order-btn'>Review Order</button>
-            </div>
+            <button className='review-order-btn'>Review Order <FontAwesomeIcon icon={faArrowRight} /></button>
+            </div> 
         </div>
     );
 };
